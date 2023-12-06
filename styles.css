@@ -1,0 +1,96 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.background-image {
+  background-image: url('mainPage.jpg');
+  /* Arka plan resmi dosyasının adını ve uzantısını buraya ekleyin */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Diğer stiller buraya gelecek, değişen bir şey yok */
+
+/* Diğer stiller buraya gelecek, değişen bir şey yok */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation button:not(:last-child) {
+  background-color: #ddd;
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.navigation button:last-child {
+  cursor: pointer;
+}
+
+/* Yeni stil ekleniyor */
+.login-button {
+  margin-left: auto;
+  background-color: #ddd;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Diğer stiller buraya gelecek, değişen bir şey yok */
+
+/* Diğer stiller buraya gelecek, değişen bir şey yok */
+
+.main {
+  padding: 20px;
+}
+
+footer {
+  background-color: transparent;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.contact-info {
+  display: flex;
+}
+
+.contact-info p {
+  margin: 0;
+}
+
+.contact-info a {
+  color: #fff;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
