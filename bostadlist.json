@@ -3,7 +3,7 @@
     "id": 1,
     "type": "Apartment",
     "address": "Fågelstigen 10E, Stockholm",
-    "price": 250000,
+    "price": 2500000,
     "rooms": 3,
     "area": 120,
     "balcony": true,
@@ -13,13 +13,13 @@
     "storage": true,
     "parking": false,
     "courtyard": false,
-    "image": "house1.jpeg"
+    "image": "img/house1.jpeg"
   },
   {
     "id": 2,
     "type": "Villa",
     "address": "Länkvägen 1, Malmö",
-    "price": 450000,
+    "price": 4500000,
     "rooms": 5,
     "area": 200,
     "balcony": false,
@@ -29,13 +29,13 @@
     "storage": true,
     "parking": true,
     "courtyard": true,
-    "image": "house2.jpg"
+    "image": "img/house2.jpg"
   },
   {
     "id": 3,
     "type": "Apartment",
     "address": "Sköndalsvägen 38F, Göteborg",
-    "price": 350000,
+    "price": 3500000,
     "rooms": 4,
     "area": 150,
     "balcony": true,
@@ -45,13 +45,13 @@
     "storage": false,
     "parking": true,
     "courtyard": false,
-    "image": "house3.jpg"
+    "image": "img/house3.jpg"
   },
   {
     "id": 4,
     "type": "House",
     "address": "Kyndelgränd 22, Malmö",
-    "price": 200000,
+    "price": 2000000,
     "rooms": 2,
     "area": 80,
     "balcony": true,
@@ -61,13 +61,13 @@
     "storage": true,
     "parking": true,
     "courtyard": true,
-    "image": "house4.jpg"
+    "image": "img/house4.jpg"
   },
   {
     "id": 5,
     "type": "Backamovägen 18, Göteborg",
     "address": "",
-    "price": 600000,
+    "price": 6000000,
     "rooms": 6,
     "area": 300,
     "balcony": false,
@@ -76,13 +76,14 @@
     "year": 2000,
     "storage": true,
     "parking": true,
-    "courtyard": true
+    "courtyard": true,
+    "image": "img/house5.jpg"
   },
   {
     "id": 6,
     "type": "House",
     "address": "Sandhamnsgatan 13, Stockholm",
-    "price": 280000,
+    "price": 2800000,
     "rooms": 3,
     "area": 110,
     "balcony": false,
@@ -91,13 +92,14 @@
     "year": 2012,
     "storage": false,
     "parking": false,
-    "courtyard": true
+    "courtyard": true,
+    "image": "img/house6.jpg"
   },
   {
     "id": 7,
     "type": "Apartment",
     "address": "Fyrskeppsvägen 122, Stockholm",
-    "price": 180000,
+    "price": 1800000,
     "rooms": 1,
     "area": 60,
     "balcony": true,
@@ -106,13 +108,14 @@
     "year": 2007,
     "storage": false,
     "parking": false,
-    "courtyard": false
+    "courtyard": false,
+    "image": "img/house7.jpeg"
   },
   {
     "id": 8,
     "type": "Villa",
     "address": "Fridensborgsvägen 145, Malmö ",
-    "price": 520000,
+    "price": 5200000,
     "rooms": 4,
     "area": 220,
     "balcony": true,
@@ -121,13 +124,14 @@
     "year": 2003,
     "storage": true,
     "parking": true,
-    "courtyard": true
+    "courtyard": true,
+    "image": "img/house8.jpeg"
   },
   {
     "id": 9,
     "type": "House",
     "address": "OskarsLundsbacken 39, Göteborg",
-    "price": 320000,
+    "price": 3200000,
     "rooms": 5,
     "area": 180,
     "balcony": false,
@@ -136,13 +140,14 @@
     "year": 2009,
     "storage": true,
     "parking": false,
-    "courtyard": false
+    "courtyard": false,
+    "image": "img/house9.jpeg"
   },
   {
     "id": 10,
     "type": "Apartment",
     "address": "Syrengatan 9, Stockholm",
-    "price": 210000,
+    "price": 2100000,
     "rooms": 2,
     "area": 90,
     "balcony": true,
@@ -151,13 +156,14 @@
     "year": 2018,
     "storage": true,
     "parking": false,
-    "courtyard": true
+    "courtyard": true,
+    "image": "img/house10.jpeg"
   },
   {
     "id": 11,
     "type": "Villa",
     "address": "Näsbydalsvägen 4, Malmö",
-    "price": 480000,
+    "price": 4800000,
     "rooms": 5,
     "area": 250,
     "balcony": false,
@@ -166,13 +172,14 @@
     "year": 2011,
     "storage": true,
     "parking": true,
-    "courtyard": false
+    "courtyard": false,
+    "image": "img/house11.jpeg"
   },
   {
     "id": 12,
     "type": "House",
     "address": "Kabelverksgatan 66, Malmö",
-    "price": 300000,
+    "price": 3000000,
     "rooms": 4,
     "area": 160,
     "balcony": true,
@@ -181,7 +188,135 @@
     "year": 2014,
     "storage": false,
     "parking": true,
-    "courtyard": true
+    "courtyard": true,
+    "image": "img/house12.jpg"
+  },
+  {
+    "id": 13,
+    "type": "Apartment",
+    "address": "Strandvägen 15B, Stockholm",
+    "price": 2800000,
+    "rooms": 3,
+    "area": 110,
+    "balcony": true,
+    "floor": 7,
+    "elevator": true,
+    "year": 2010,
+    "storage": true,
+    "parking": false,
+    "courtyard": false,
+    "image": "img/house13.jpg"
+  },
+  {
+    "id": 14,
+    "type": "Villa",
+    "address": "Havsvägen 8, Gothenburg",
+    "price": 5000000,
+    "rooms": 6,
+    "area": 280,
+    "balcony": false,
+    "floor": 3,
+    "elevator": false,
+    "year": 2006,
+    "storage": true,
+    "parking": true,
+    "courtyard": true,
+    "image": "img/house14.jpg"
+  },
+  {
+    "id": 15,
+    "type": "Apartment",
+    "address": "Södra Vägen 20D, Malmo",
+    "price": 3200000,
+    "rooms": 4,
+    "area": 140,
+    "balcony": true,
+    "floor": 5,
+    "elevator": false,
+    "year": 2012,
+    "storage": false,
+    "parking": true,
+    "courtyard": false,
+    "image": "img/house15.jpg"
+  },
+  {
+    "id": 16,
+    "type": "House",
+    "address": "Rönnbärsvägen 12, Stockholm",
+    "price": 2400000,
+    "rooms": 2,
+    "area": 90,
+    "balcony": true,
+    "floor": 1,
+    "elevator": false,
+    "year": 2016,
+    "storage": true,
+    "parking": true,
+    "courtyard": true,
+    "image": "img/house16.jpg"
+  },
+  {
+    "id": 17,
+    "type": "Villa",
+    "address": "Ängsvägen 5, Gothenburg",
+    "price": 5500000,
+    "rooms": 7,
+    "area": 320,
+    "balcony": true,
+    "floor": 2,
+    "elevator": false,
+    "year": 2009,
+    "storage": true,
+    "parking": true,
+    "courtyard": true,
+    "image": "img/house17.jpg"
+  },
+  {
+    "id": 18,
+    "type": "House",
+    "address": "Birger Jarlsgatan 30, Stockholm",
+    "price": 3200000,
+    "rooms": 3,
+    "area": 130,
+    "balcony": false,
+    "floor": 2,
+    "elevator": true,
+    "year": 2010,
+    "storage": false,
+    "parking": false,
+    "courtyard": true,
+    "image": "img/house18.jpg"
+  },
+  {
+    "id": 19,
+    "type": "Apartment",
+    "address": "Hamngatan 5A, Gothenburg",
+    "price": 2000000,
+    "rooms": 2,
+    "area": 80,
+    "balcony": true,
+    "floor": 3,
+    "elevator": true,
+    "year": 2015,
+    "storage": true,
+    "parking": false,
+    "courtyard": false,
+    "image": "img/house19.jpg"
+  },
+  {
+    "id": 20,
+    "type": "Villa",
+    "address": "Strandpromenaden 18, Malmo",
+    "price": 4800000,
+    "rooms": 5,
+    "area": 240,
+    "balcony": false,
+    "floor": 2,
+    "elevator": false,
+    "year": 2013,
+    "storage": true,
+    "parking": true,
+    "courtyard": true,
+    "image": "img/house20.jpg"
   }
 ]
-  

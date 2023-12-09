@@ -145,6 +145,79 @@ main {
 
 .property-info {
   flex: 1;
+  max-width: 1000px;/* Adjust the maximum width as needed */
+  margin-right: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);/* Add a subtle box shadow */
+  background-color: #f4f4f4;/* Set a background color for property-info */
+  border: 1px solid #ccc;/* Add a border around property-info */
+  border-radius: 8px;/* Optional: Add border-radius for rounded corners *//* Add margin to create space between property-info and property-description */
+}
+
+.property-info p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  /* Adjust the font size as needed */
+  color: #333;
+  text-align: justify;
+  font-weight: bold;
+}
+/* ... (unchanged styles) ... */
+
+.property-info .additional-label {
+  display: inline-block;
+  background-color: #32a136;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 10px;
+  /* This line makes it a square shape */
+}
+
+
+
+/* ... (unchanged styles) ... */
+
+
+.property-description {
+  flex: 1;
+  max-width: 600px;
+  /* Adjust the maximum width as needed */
+  margin-top: 10px;
+  /* Add margin to create space between property-info and property-description */
+}
+
+.property-description p {
+  font-size: 13px;
+  /* Adjust the font size as needed */
+  line-height: 1.6;
+  /* Adjust the line height for better readability */
+  color: #555;
+  /* Set the font color */
+  text-align: justify;
+  /* Align text to justify */
+  margin-bottom: 10px;
+  /* Add margin at the bottom of each paragraph */
+}
+
+.property-description a {
+  color: #007BFF;
+  /* Set the link color */
+  text-decoration: underline;
+  /* Add underline to links */
+}
+
+.property-description a:hover {
+  color: #0056b3;
+  /* Set the link color on hover */
+}
+
+.property-description hr {
+  border: 1px solid #ccc;
+  /* Add a horizontal line separator */
+  margin: 20px 0;
+  /* Adjust the margin around the horizontal line */
 }
 
 
