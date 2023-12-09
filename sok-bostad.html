@@ -23,8 +23,102 @@
   </header>
   <img src="mainPage.jpg" alt="Main Page Image" class="mainPage">
   <main>
-    <!-- Your main content goes here -->
+    <section class="filters">
+      <form action="" method="post">
+        <h3>Sök Bostad</h3>
+
+        <div class="flex">
+          <!-- City Box -->
+          <div class="box">
+            <p>Stad</p>
+            <select name="city" class="input" required>
+              <option value="stockholm">Stockholm</option>
+              <option value="göteborg">Göteborg</option>
+              <option value="malmö">Malmö</option>
+            </select>
+          </div>
+
+          <!-- Bostad type Box -->
+          <div class="box">
+            <p>Bostad type</p>
+            <select name="type" class="input" required>
+              <option value="flat">Lägenhet</option>
+              <option value="house">Hus</option>
+              <option value="villa">Villa</option>
+            </select>
+          </div>
+
+          <!-- Minst antal rum Box -->
+          <div class="box">
+            <p>Minst antal rum</p>
+            <select name="bhk" class="input" required>
+              <option value="1">1 rum</option>
+              <option value="2">2 rum</option>
+              <option value="3">3 rum</option>
+              <option value="4">4 rum</option>
+              <option value="5">5 rum</option>
+              <option value="6">6 rum</option>
+            </select>
+          </div>
+
+          <!-- Minst bo area Box -->
+          <div class="box">
+            <p>Minst bo area</p>
+            <select name="minimum" class="input" required>
+              <option value="40">40 m2</option>
+              <option value="50">50 m2</option>
+              <option value="60">60 m2</option>
+              <option value="70">70 m2</option>
+              <option value="80">80 m2</option>
+              <option value="90">90 m2</option>
+              <option value="100">100 m2</option>
+              <option value="110">110 m2</option>
+              <option value="120">120 m2</option>
+              <option value="130">130 m2</option>
+              <option value="140">140 m2</option>
+              <option value="150">150 m2</option>
+              <option value="160">160 m2</option>
+              <option value="170">170 m2</option>
+              <option value="180">180 m2</option>
+              <option value="190">190 m2</option>
+              <option value="200">200 m2</option>
+              <option value="210">210 m2</option>
+              <option value="220">220 m2</option>
+              <option value="230">230 m2</option>
+              <option value="240">240 m2</option>
+              <option value="250">250 m2</option>
+            </select>
+          </div>
+
+          <!-- Högst pris Box -->
+          <div class="box">
+            <p>Högst pris</p>
+            <select name="maximum" class="input" required>
+              <option value="100000">100,000 kr</option>
+              <option value="200000">200,000 kr</option>
+              <option value="300000">300,000 kr</option>
+              <option value="500000">500,000 kr</option>
+              <option value="700000">700,000 kr</option>
+              <option value="1000000">1,000,000 kr</option>
+              <option value="1300000">1,300,000 kr</option>
+              <option value="1500000">1,500,000 kr</option>
+              <option value="1700000">1,700,000 kr</option>
+              <option value="2000000">2,000,000 kr</option>
+              <option value="3000000">3,000,000 kr</option>
+              <option value="4000000">4,000,000 kr</option>
+              <option value="5000000">5,000,000 kr</option>
+            </select>
+          </div>
+        </div>
+
+        <input type="submit" value="Hitta bostader till salu" name="search" class="btn">
+      </form>
+    </section>
+
+      <!-- Property List -->
+      <ul id="propertyList" class="property-list"></ul>
   </main>
+
   <footer class="footer">
     <section class="flex">
       <div class="box">
@@ -46,7 +140,7 @@
     </section>
     <div class="credit">&copy; copyright @ 2023 by <span>Nordic Hus</span> | all rights reserved!</div>
   </footer>
-  <!-- <script src="script.js"></script> -->
+  <script src="script1.js"></script>
 </body>
 
 </html>
