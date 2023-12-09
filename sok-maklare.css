@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+  }
+  header {
+    background-color: #a59068;
+    color: #ead2d2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .navbar .flex .logo{
+    font-size: 2.2rem;
+    color: var(--white); 
+  }
+  
+  .header .navbar .flex .logo i{
+    color:#585a51;
+    margin-right: 1rem;
+  }
+  
+  .logo h1 {
+    margin: 0;
+  }
+  
+  .navigation {
+    display: flex;
+  }
+  
+  .navigation button {
+    background-color: #585a51;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .login-button {
+    background-color: #32a136;
+  }
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.mäklare{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+.maklare-item img {
+    max-width: 0%;
+    border-radius: 5%;
+}
+
+
+/* Add styling for the additional information container */
+.additional-info {
+    margin-top: 10px;
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #dd8989;
+  }
+  
+  .additional-info.show-info {
+    display: block;
+  }
+  
+
+
+.footer {
+    background-color: #a59068;
+    color: #8ac513;
+    padding: 60px 0;
+  }
+  
+  .footer .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .footer .box {
+    flex: 1 1 30%;
+    text-align: center;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #585a51;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .footer i {
+    margin-right: 5px;
+  }
+  
+  .footer .credit {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #f7f2f2;
+  }
+  
+  .footer .credit span {
+    color: #5a0616;
+  }
+  

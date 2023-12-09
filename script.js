@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function () {
 function goToPage(page) {
   console.log("Go to " + page);
 }
@@ -10,7 +11,8 @@ function scrollDown() {
     const mainContent = document.querySelector("index");
     mainContent.scrollIntoView({ behavior: "smooth" });
   }
+ 
   
-  
+});
 
 
