@@ -14,15 +14,16 @@ body {
     z-index: -1;
 }
 .main {
-  background: url('mainPage.jpg') no-repeat center center fixed;
+  
   background-size: cover;
   height: 100vh; /* 100 viewport height'e ayarlanmış örnek bir yükseklik */
   display: flex; /* veya istediğiniz bir diğer display değeri */
   align-items: center;
   justify-content: center;
-}
-
-
+  flex: 1;
+    /* Adjusted styles for the main content area */
+  padding-bottom: 60px;
+  }
 header {
   background-color: #a59068;
   color: #ead2d2;

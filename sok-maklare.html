@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="sok-maklare.css">
+  <title>Nordic Hus</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>Nordic Hus</h1>
+    </div>
+
+    <div class="navigation">
+      <button onclick="window.location.href='index.html'">HuvudSida</button>
+      <button onclick="window.location.href='sok-bostad.html'">Sök Bostad</button>
+      <button onclick="window.location.href='salja-bostad.html'">Sälj Bostad</button>
+      <button class="login-button" onclick="window.location.href='logga-in.html'">Login</button>
+    </div>
+  </header>
+
+<main>
+  <section class="Mäklare">
+    <h1 class="heading"></h1>
+
+  <div class="mäklare-container" onclick="showHouses('mäklare1')">
+      <div class="mäklare-img">
+            <img src="alex.jpg.webp" alt="Alex Svensson">
+        </div>
+        <div class="mäklare-info">
+            <h2>Alex Svensson</h2>
+            <p>Tel: 123-456-7890</p>
+            <p>Email: alex@nordichus.com</p>
+            <p>Adres: Nacka Forum, No:23</p>
+        </div>
+  </div>
+  <div class="mäklare-container" onclick="showHouses('mäklare2')">
+      <div class="mäklare-img">
+          <img src="camilla.webp" alt="Camilla Yvett">
+      </div>
+      <div class="mäklare-info">
+          <h2>Camilla Yvett</h2>
+          <p>Tel: 076-258-9890</p>
+          <p>Email: camilla@nordichus.com</p>
+          <p>Adres: Värmdö Centrum, No:32</p>
+      </div>
+  </div>
+  <div class="mäklare-container" onclick="showHouses('mäklare3')">
+    <div class="mäklare-img">
+        <img src="kalle.webp" alt="Kalle Björn">
+    </div>
+    <div class="mäklare-info">
+        <h2>Kalle Björn</h2>
+        <p>Tel: 075-325-956</p>
+        <p>Email: kalle@nordichus.com</p>
+        <p>Adres: Farsta Centrum, No:85</p>
+    </div>
+  </div>
+  <div class="mäklare-container" onclick="showHouses('mäklare4')">
+  <div class="mäklare-img">
+      <img src="anneli.jpeg" alt="Anneli Leon">
+  </div>
+  <div class="mäklare-info">
+      <h2>Anneli Leon</h2>
+      <p>Tel: 078-456-7890</p>
+      <p>Email: anneli@nordichus.com</p>
+      <p>Adres: Göteborg, No:03</p>
+  </div>
+  </div>
+  <div class="mäklare-container" onclick="showHouses('mäklare5')">
+  <div class="mäklare-img">
+      <img src="joseph.png" alt="Joseph Cannes">
+  </div>
+  <div class="mäklare-info">
+      <h2>Joseph Cannes</h2>
+      <p>Tel: 123-456-7890</p>
+      <p>Email: joseph@nordichus.com</p>
+      <p>Adres: Malmö, No:98</p>
+  </div>
+  </div>
+  <div class="mäklare-container" onclick="showHouses('mäklare6')">
+  <div class="mäklare-img">
+      <img src="eva.webp" alt="Eva Törnberg">
+  </div>
+  <div class="mäklare-info">
+      <h2>Eva Törnberg</h2>
+      <p>Tel: 079-498-356</p>
+      <p>Email: Eva@nordichus.com</p>
+      <p>Adres: Södermalm, No:23</p>
+  </div>
+</div>
+
+  </section>
+</main>
+
+  <footer class="footer">
+    <section class="flex">
+      <div class="box">
+        <a href="tel:1234567890"><i class="fas fa-phone"></i><span>123456789</span></a>
+        <a href="mailto:info@nordichus.com"><i class="fas fa-envelope"></i><span>info@nordichus.com</span></a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i><span>Stockholm, Sverige</span></a>
+      </div>
+      <div class="box">
+        <a href=" "><span> </span></a>
+        <a href="omOss.html"><span>Om Oss</span></a>
+        <a href="kontakt.html"><span>Kontakt</span></a>
+      </div>
+      <div class="box">
+        <a href="https://www.facebook.com/nordichus"><span>facebook </span><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/nordichus"><span>twitter </span><i class="fab fa-twitter "></i></a>
+        <a href="https://www.linkedin.com/nordichus"><span>linkedin </span><i class="fab fa-linkedin "></i></a>
+        <a href="https://www.instagram.com/nordichus"><span>instagram </span><i class="fab fa-instagram"></i></a>
+      </div>
+    </section>
+    <div class="credit">&copy; copyright @ 2023 by <span>Nordic Hus</span> | all rights reserved!</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

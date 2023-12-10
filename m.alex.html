@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="m.alex.css">
+  <title>Nordic Hus</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>Nordic Hus</h1>
+    </div>
+
+    <div class="navigation">
+      <button onclick="window.location.href='sok-maklare.html'">Sök Mäklare</button>
+      <button onclick="window.location.href='sok-bostad.html'">Sök Bostad</button>
+      <button onclick="window.location.href='salja-bostad.html'">Sälj Bostad</button>
+      <button class="login-button" onclick="window.location.href='logga-in.html'">Login</button>
+    </div>
+  </header>
+
+  <div class="mäklare info">
+    <p>Namn: Alex Sevensson </p>
+    <p>Telefon: 123-456-7890</p>
+    <p>E-posta: alex@nordichus.com</p>
+    <p>Adres: Nacka Forum No: 25</p>
+</div>
+<div class="mäklare-container" onclick="showHouses('1')">
+    <!-- Emlakçı 1 için içerik -->
+</div>
+<div class="mäklare-container" onclick="showHouses('2')">
+    <!-- Emlakçı 2 için içerik -->
+</div>
+<!-- Diğer emlakçılar için tekrarlayın -->
+
+
+<!-- Emlakçının sahip olduğu evler -->
+<div class="sahip-oldugu-evler">
+    <h2>Sahip Olduğu Evler</h2>
+    
+    <!-- Örnek bir ev listesi -->
+    <ul>
+        <li><a href="ev1.html">Ev 1 - Detaylar için tıklayın</a></li>
+        <li><a href="ev2.html">Ev 2 - Detaylar için tıklayın</a></li>
+        <li><a href="ev3.html">Ev 3 - Detaylar için tıklayın</a></li>
+    </ul>
+</div>
+
+
+<button onclick="sendMessage('1')">Mesaj Gönder</button>
+
+
+
+<footer class="footer">
+
+    <section class="flex">
+   
+         <div class="box">
+            <a href="tel:1234567890"><i class="fas fa-phone"></i><span>123456789</span></a>
+            <a href="mailto:info@nordichus.com"><i class="fas fa-envelope"></i><span>info@nordichus.com</span></a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i><span>Stockholm, Sverige</span></a>
+         </div>
+   
+         <div class="box">
+            <a href=" "><span> </span></a> 
+            <a href="omOss.html"><span>Om Oss</span></a>
+            <a href="kontakt.html"><span>Kontakt</span></a>
+         </div>
+   
+         <div class="box">
+            <a href="https://www.facebook.com/nordichus"><span>facebook </span><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/nordichus"><span>twitter </span><i class="fab fa-twitter "></i></a>
+            <a href="https://www.linkedin.com/nordichus"><span>linkedin </span><i class="fab fa-linkedin "></i></a>
+            <a href="https://www.instagram.com/nordichus"><span>instagram </span><i class="fab fa-instagram"></i></a>
+   
+         </div>
+   
+    </section>
+   
+    <div class="credit">&copy; copyright @ 2023 by <span>Nordic Hus</span> | all rights reserved!</div>
+   
+</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
