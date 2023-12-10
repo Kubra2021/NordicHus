@@ -11,65 +11,82 @@
 
 <body>
 
-  <div class="mainPage.jpg"></div>
   <header>
     <div class="logo">
       <h1>Nordic Hus</h1>
     </div>
 
     <div class="navigation">
-      <button onclick="window.location.href='index.html'">HuvudSida</button>
+      <button onclick="window.location.href='huvudsida.html'">HuvudSida</button>
       <button onclick="window.location.href='sok-bostad.html'">Sök Bostad</button>
       <button onclick="window.location.href='salja-bostad.html'">Sälj Bostad</button>
-      <button class="login-button" onclick="window.location.href='pages/logga-in.html'">Login</button>
+      <button class="login-button" onclick="window.location.href='logga-in.html'">Login</button>
     </div>
   </header>
 
-  <main>
+<main>
   <section class="Mäklare">
-    <h1 class="heading">Mäklare</h1>
-    <div class="Mäklare" onclick="showHouses('mäklare1')">
-      <img src="alex.jpg.webp" alt="Alex Svensson">
-      <h2>Alex Svensson</h2>
-      <div class="additional-info">
-        <p>Tel: 123-456-7890</p>
-        <p>Email: alex@nordichus.com</p>
-        <p>Adres: Nacka Forum, No:23</p>
+    <h1 class="heading"></h1>
+
+  <div class="mäklare-container" onclick="showHouses('mäklare1')">
+      <div class="mäklare-img">
+            <img src="img/alex.jpg.webp" alt="Alex Svensson">
+        </div>
+        <div class="mäklare-info">
+            <h2>Alex Svensson</h2>
+            <p>Tel: 123-456-7890</p>
+            <p>Email: alex@nordichus.com</p>
+            <p>Adres: Nacka Forum, No:23</p>
+        </div>
+  </div>
+  <div class="mäklare-container" onclick="showHouses('mäklare2')">
+      <div class="mäklare-img">
+          <img src="img/camilla.webp" alt="Camilla Yvett">
       </div>
+      <div class="mäklare-info">
+          <h2>Camilla Yvett</h2>
+          <p>Tel: 076-258-9890</p>
+          <p>Email: camilla@nordichus.com</p>
+          <p>Adres: Värmdö Centrum, No:32</p>
+      </div>
+  </div>
+  <div class="mäklare-container" onclick="showHouses('mäklare3')">
+    <div class="mäklare-img">
+        <img src="img/kalle.webp" alt="Kalle Björn">
     </div>
-    
-    
-    <div class="Mäklare" onclick="showHouses('mäklare2')">
-      <h2>Camilla Björn</h2>
-      <p>Tel: 987-654-3210</p>
-      <p>Email: camilla@nordichus.com</p>
-      <p>Adres: Värmdö Centrum, No: 456</p>
+    <div class="mäklare-info">
+        <h2>Kalle Björn</h2>
+        <p>Tel: 075-325-956</p>
+        <p>Email: kalle@nordichus.com</p>
+        <p>Adres: Farsta Centrum, No:85</p>
     </div>
-    <div class="Mäklare" onclick="showHouses('mäklare3')">
-      <h2>Helen Cannes</h2>
-      <p>Tel: 176-125-3210</p>
-      <p>Email: helen@nordichus.com</p>
-      <p>Adres: Lidingö Centrum, No: 46</p>
-    </div>
-    <div class="Mäklare" onclick="showHouses('mäklare4')">
-      <h2>Kalle Linda</h2>
-      <p>Tel: 123-654-0210</p>
-      <p>Email: kalle@nordichus.com</p>
-      <p>Adres: Farsta Centrum, No: 56</p>
-    </div>
-    <div class="Mäklare" onclick="showHouses('mäklare5')">
-      <h2>Sofia Stars</h2>
-      <p>Tel: 852-654-3710</p>
-      <p>Email: sofia@nordichus.com</p>
-      <p>Adres: Gustavsberg Centrum, No: 125</p>
-    </div>
-    <div class="Mäklare" onclick="showHouses('mäklare6')">
-      <h2>Hasse Gunnebo</h2>
-      <p>Tel: 658-582-2485</p>
-      <p>Email: hasse@nordichus.com</p>
-      <p>Adres: Täby Centrum, No: 85</p>
-    </div>
+  </div>
+</div>
+  <div class="mäklare-container" onclick="showHouses('mäklare5')">
+  <div class="mäklare-img">
+      <img src="img/joseph.png" alt="Joseph Cannes">
+  </div>
+  <div class="mäklare-info">
+      <h2>Joseph Cannes</h2>
+      <p>Tel: 123-456-7890</p>
+      <p>Email: joseph@nordichus.com</p>
+      <p>Adres: Malmö, No:98</p>
+  </div>
+  </div>
+  <div class="mäklare-container" onclick="showHouses('mäklare6')">
+  <div class="mäklare-img">
+      <img src="img/eva.webp" alt="Eva Törnberg">
+  </div>
+  <div class="mäklare-info">
+      <h2>Eva Törnberg</h2>
+      <p>Tel: 079-498-356</p>
+      <p>Email: Eva@nordichus.com</p>
+      <p>Adres: Södermalm, No:23</p>
+  </div>
+</div>
+
   </section>
+</main>
 
   <footer class="footer">
     <section class="flex">
