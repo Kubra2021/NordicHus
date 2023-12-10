@@ -20,39 +20,36 @@ fetch('bostadlist.json')
       propertyList.innerHTML = '';
 
       if (properties.length === 0) {
-        propertyList.innerHTML = '<p>No properties found.</p>';
+        propertyList.innerHTML = '<p>Inga bostäder hittades.</p>';
       } else {
         properties.forEach(function (property) {
           var propertyItem = document.createElement('li');
           var additionalLabels = '';
 
-          if (property.elevator) {
-            additionalLabels += '<div class="additional-label">Elevator</div>';
+          if (property.Hiss) {
+            additionalLabels += '<div class="additional-label">Hiss</div>';
           }
-
-          if (property.balcony) {
-            additionalLabels += '<div class="additional-label-container"><div class="additional-label">Balcony</div></div>';
+          if (property['Balkong/Uteplats']) {
+            additionalLabels += '<div class="additional-label-container"><div class="additional-label">Balkong/Uteplats</div></div>';
           }
 
           propertyItem.innerHTML = `
-        <div class="property-box">
-          <img src="${property.image}" alt="Property Image" class="property-image">
-          <div class="property-info-description">
-            <p>${property.type}</p>
-            <p>${property.address}</p>
-            <p>${property.price} SEK | ${property.area} sq. ft. | ${property.rooms} Rooms</p>
-            ${additionalLabels}
-            <hr>
-            <p>${property.type === 'House' ? 'House' : 'Apartment'} located in ${property.address} is now available for sale.</p>
-            <p>This ${property.rooms}-bedroom property has a total area of ${property.area} square feet, offering spacious living areas. It features ${property.balcony ? 'a balcony, ' : ''}${property.elevator ? 'an elevator, ' : ''}${property.storage ? 'storage, ' : ''}${property.parking ? 'parking, ' : ''}${property.courtyard ? 'a courtyard, ' : ''}making it a convenient and comfortable home. Don't miss the opportunity to own this property built in ${property.year}. Contact us for more details and to schedule a viewing.</p>
-          </div>
-        </div>
-      `;
+            <div class="property-box">
+              <img src="${property.image}" alt="Bild på bostad" class="property-image">
+              <div class="property-info-description">
+                <p>${property.Bostadstyp}</p>
+                <p>${property.Address}</p>
+                <p>${property.Utgångspris} SEK | ${property.Boarea} kvadratmeter | ${property['Antal rum']} rum</p>
+                ${additionalLabels}
+                <hr>
+                <p>${property.Bostadstyp} beläget i ${property.Address} är nu till salu.</p>
+                <p>Denna ${property['Antal rum']}-rumslägenhet har en total area på ${property.Boarea} kvadratmeter och erbjuder rymliga vardagsrum. Den har ${property['Balkong/Uteplats'] ? 'en balkong, ' : ''}${property.Hiss ? 'hiss, ' : ''}${property.Förråd ? 'förråd, ' : ''}${property.Parkering ? 'parkering, ' : ''}${property.Innergård ? 'innergård, ' : ''}vilket gör den till ett bekvämt och trivsamt hem. Missa inte chansen att äga denna fastighet byggd ${property.Byggnadsår}. Kontakta oss för mer information och för att boka en visning.</p>
+              </div>
+            </div>
+          `;
           propertyList.appendChild(propertyItem);
         });
       }
     }
-
-
   })
-  .catch(error => console.error('Error fetching data:', error));
+  .catch(error => console.error('Fel vid hämtning av data:', error));

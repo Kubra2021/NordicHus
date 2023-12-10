@@ -21,9 +21,7 @@
       <button class="login-button" onclick="window.location.href='pages/logga-in.html'">Login</button>
     </div>
   </header>
-
   <img src="mainPage.jpg" alt="Main Page Image" class="mainPage">
-
   <main>
     <section class="filters">
       <form action="" method="post">
@@ -42,11 +40,11 @@
 
           <!-- Bostad type Box -->
           <div class="box">
-            <p>Bostad type</p>
+            <p>Bostad typ</p>
             <select name="type" class="input" required>
-              <option value="flat">Lägenhet</option>
-              <option value="house">Hus</option>
-              <option value="villa">Villa</option>
+              <option value="Lägenhet">Lägenhet</option>
+              <option value="Hus">Hus</option>
+              <option value="Villa">Villa</option>
             </select>
           </div>
 
@@ -67,8 +65,39 @@
           <div class="box">
             <p>Minst bo area</p>
             <select name="minimum" class="input" required>
-              <option value="40">40 m2</option>
-              <!-- More options for minimum area -->
+              <option value="60">60 m2</option>
+              <option value="70">70 m2</option>
+              <option value="80">80 m2</option>
+              <option value="90">90 m2</option>
+              <option value="100">100 m2</option>
+              <option value="110">110 m2</option>
+              <option value="120">120 m2</option>
+              <option value="130">130 m2</option>
+              <option value="140">140 m2</option>
+              <option value="150">150 m2</option>
+              <option value="160">160 m2</option>
+              <option value="170">170 m2</option>
+              <option value="180">180 m2</option>
+              <option value="190">190 m2</option>
+              <option value="200">200 m2</option>
+              <option value="210">210 m2</option>
+              <option value="220">220 m2</option>
+              <option value="230">230 m2</option>
+              <option value="240">240 m2</option>
+              <option value="250">250 m2</option>
+              <option value="260">260 m2</option>
+              <option value="270">270 m2</option>
+              <option value="280">280 m2</option>
+              <option value="290">290 m2</option>
+              <option value="300">300 m2</option>
+              <option value="310">310 m2</option>
+              <option value="320">320 m2</option>
+              <option value="330">330 m2</option>
+              <option value="340">340 m2</option>
+              <option value="350">350 m2</option>
+              <option value="360">360 m2</option>
+              <option value="370">370 m2</option>
+
             </select>
           </div>
 
@@ -77,12 +106,33 @@
             <p>Högst pris</p>
             <select name="maximum" class="input" required>
               <option value="800000">800,000 kr</option>
-              <!-- More options for maximum price -->
+              <option value="1000000">1,000,000 kr</option>
+              <option value="1300000">1,300,000 kr</option>
+              <option value="1500000">1,500,000 kr</option>
+              <option value="1700000">1,700,000 kr</option>
+              <option value="2000000">2,000,000 kr</option>
+              <option value="2500000">2,500,000 kr</option>
+              <option value="3000000">3,000,000 kr</option>
+              <option value="3500000">3,500,000 kr</option>
+              <option value="4000000">4,000,000 kr</option>
+              <option value="4500000">4,500,000 kr</option>
+              <option value="5000000">5,000,000 kr</option>
+              <option value="5500000">5,500,000 kr</option>
+              <option value="6000000">6,000,000 kr</option>
+              <option value="6500000">6,500,000 kr</option>
+              <option value="7000000">7,000,000 kr</option>
+              <option value="7500000">7,500,000 kr</option>
+              <option value="8000000">8,000,000 kr</option>
+              <option value="8500000">8,500,000 kr</option>
+              <option value="9000000">9,000,000 kr</option>
+              <option value="9500000">9,500,000 kr</option>
+              <option value="10000000">10,000,000 kr</option>
             </select>
           </div>
         </div>
 
-        <input type="submit" value="Hitta bostader till salu" name="search" class="btn">
+        <!-- Search Button -->
+        <button type="button" onclick="searchProperties()">Hitta bostäder till salu</button>
       </form>
     </section>
 
@@ -91,27 +141,34 @@
   </main>
 
   <footer class="footer">
+  
     <section class="flex">
+  
       <div class="box">
         <a href="tel:1234567890"><i class="fas fa-phone"></i><span>123456789</span></a>
         <a href="mailto:info@nordichus.com"><i class="fas fa-envelope"></i><span>info@nordichus.com</span></a>
         <a href="#"><i class="fas fa-map-marker-alt"></i><span>Stockholm, Sverige</span></a>
       </div>
+  
       <div class="box">
-        <a href="#"><span> </span></a>
+        <a href=" "><span> </span></a>
         <a href="omOss.html"><span>Om Oss</span></a>
         <a href="kontakt.html"><span>Kontakt</span></a>
       </div>
+  
       <div class="box">
         <a href="https://www.facebook.com/nordichus"><span>facebook </span><i class="fab fa-facebook-f"></i></a>
         <a href="https://twitter.com/nordichus"><span>twitter </span><i class="fab fa-twitter "></i></a>
         <a href="https://www.linkedin.com/nordichus"><span>linkedin </span><i class="fab fa-linkedin "></i></a>
         <a href="https://www.instagram.com/nordichus"><span>instagram </span><i class="fab fa-instagram"></i></a>
+  
       </div>
+  
     </section>
+  
     <div class="credit">&copy; copyright @ 2023 by <span>Nordic Hus</span> | all rights reserved!</div>
+  
   </footer>
-
   <script src="script1.js"></script>
 </body>
 
