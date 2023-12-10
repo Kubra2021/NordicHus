@@ -1,0 +1,209 @@
+/* Add your existing CSS styles here */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('mainPage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* Add this line to make positioning relative */
+}
+
+header {
+  background-color: #a59068;
+  color: #ead2d2;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation button {
+  background-color: #585a51;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.login-button {
+  background-color: #32a136;
+}
+
+main {
+  flex: 1;
+  /* Adjusted styles for the main content area */
+  padding: 10px;
+  /* Adjusted padding for content */
+}
+
+/* Property Search Box Styles */
+.filter-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adjust background color and transparency */
+  backdrop-filter: blur(10px);
+  /* Apply blur effect to the background */
+  padding: 20px;
+  /* Adjust padding as needed */
+  border-radius: 10px;
+  /* Optional: Add border-radius for rounded corners */
+  margin: 20px auto;
+  /* Center the container horizontally */
+}
+
+.filters {
+  position: absolute;
+  top: 400px;
+  /* Adjust the pixel value to move it closer to the header */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 80%;
+  width: auto;
+  min-width: 200px;
+}
+
+.filters form {
+  width: 100%;
+  /* Adjust the width as needed */
+}
+
+.filters h3 {
+  margin-bottom: 20px;
+}
+
+.filters .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.filters .box {
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.filters input,
+.filters select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.filters button {
+  background-color: #32a136;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Adjusted CSS for services container */
+/* Adjusted CSS for services container */
+.services {
+  position: relative;
+}
+
+.services-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur;
+  padding: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 80%;
+  width: auto;
+  min-width: 200px;
+  z-index: 2;
+  
+  /* Add margin-bottom to create space below the header */
+}
+
+.services .box-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  padding-top: 150px;
+    /* Add margin-top to create space above the boxes */
+}
+
+.services .box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.services .box h3 {
+  margin-bottom: 10px;
+}
+
+.services .box p {
+  line-height: 1.5;
+}
+
+.footer {
+  background-color: #a59068;
+  color: #585a51;
+  padding: 60px 0;
+}
+
+.footer .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.footer .box {
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #585a51;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer i {
+  margin-right: 5px;
+}
+
+.footer .credit {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #f7f2f2;
+}
+
+.footer .credit span {
+  color: #5a0616;
+}
