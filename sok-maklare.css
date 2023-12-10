@@ -1,13 +1,16 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  z-index: -1;
+  background-image: url('img/mainPage.jpg');
 }
 
 header {
@@ -17,6 +20,27 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation button {
+  background-color: #585a51;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.login-button {
+  background-color: #32a136;
 }
 
 .logo h1 {
@@ -63,7 +87,9 @@ main {
   display: flex;
   align-items: center;
   transition: transform 0.2s ease-in-out;
+  background: rgba(255, 255, 255, 0.8);
 }
+
 
 .mäklare-container:hover {
   transform: scale(1.05);

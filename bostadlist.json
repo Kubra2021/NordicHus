@@ -13,7 +13,8 @@
     "Förråd": true,
     "Parkering": false,
     "Innergård": false,
-    "image": "img/house1.jpeg"
+    "image": "img/house1.jpeg",
+    "mäklare" : "Alex Svensson"
   },
   {
     "id": 2,
@@ -29,7 +30,8 @@
     "Förråd": true,
     "Parkering": true,
     "Innergård": true,
-    "image": "img/house2.jpg"
+    "image": "img/house2.jpg",
+    "mäklare" : "Joseph Cannes"
   },
   {
     "id": 3,
@@ -45,7 +47,8 @@
     "Förråd": false,
     "Parkering": true,
     "Innergård": false,
-    "image": "img/house3.jpg"
+    "image": "img/house3.jpg",
+    "mäklare" : "Camilla Yvett"
   },
   {
     "id": 4,
@@ -61,7 +64,8 @@
     "Förråd": true,
     "Parkering": true,
     "Innergård": true,
-    "image": "img/house4.jpg"
+    "image": "img/house4.jpg",
+    "mäklare" : "Joseph Cannes"
   },
   {
     "id": 5,
@@ -77,7 +81,8 @@
     "Förråd": true,
     "Parkering": true,
     "Innergård": true,
-    "image": "img/house5.jpg"
+    "image": "img/house5.jpg",
+    "mäklare" : "Camilla Yvett"
   },
   {
     "id": 6,
@@ -93,7 +98,8 @@
     "Förråd": false,
     "Parkering": false,
     "Innergård": true,
-    "image": "img/house6.jpg"
+    "image": "img/house6.jpg",
+    "mäklare" : "Alex Svensson"
   },
   {
     "id": 7,
@@ -109,7 +115,8 @@
     "Förråd": false,
     "Parkering": false,
     "Innergård": false,
-    "image": "img/house7.jpeg"
+    "image": "img/house7.jpeg",
+    "mäklare" : "Alex Svensson"
   },
   {
     "id": 8,
@@ -125,7 +132,8 @@
     "Förråd": true,
     "Parkering": true,
     "Innergård": true,
-    "image": "img/house8.jpeg"
+    "image": "img/house8.jpeg",
+    "mäklare" : "Joseph Cannes"
   },
   {
     "id": 9,
@@ -141,7 +149,8 @@
     "Förråd": true,
     "Parkering": false,
     "Innergård": false,
-    "image": "img/house9.jpeg"
+    "image": "img/house9.jpeg",
+    "mäklare" : "Camilla Yvett"
   },
   {
     "id": 10,
@@ -157,7 +166,8 @@
     "Förråd": true,
     "Parkering": false,
     "Innergård": true,
-    "image": "img/house10.jpeg"
+    "image": "img/house10.jpeg",
+    "mäklare" : "Alex Svensson"
   },
   {
     "id": 11,
@@ -173,7 +183,8 @@
     "Förråd": true,
     "Parkering": true,
     "Innergård": false,
-    "image": "img/house11.jpeg"
+    "image": "img/house11.jpeg",
+    "mäklare" : "Joseph Cannes"
   },
   {
     "id": 12,
@@ -189,7 +200,8 @@
     "Förråd": false,
     "Parkering": true,
     "Innergård": true,
-    "image": "img/house12.jpg"
+    "image": "img/house12.jpg",
+    "mäklare" : "Joseph Cannes"
   },
   {
     "id": 13,
@@ -205,7 +217,8 @@
     "Förråd": true,
     "Parkering": false,
     "Innergård": false,
-    "image": "img/house13.jpg"
+    "image": "img/house13.jpg",
+    "mäklare" : "Eva Törnberg"
   },
   {
     "id": 14,
@@ -221,7 +234,8 @@
     "Förråd": true,
     "Parkering": true,
     "Innergård": true,
-    "image": "img/house14.jpg"
+    "image": "img/house14.jpg",
+    "mäklare":"Kalle Björn"
   },
   {
     "id": 15,
@@ -237,7 +251,8 @@
     "Förråd": false,
     "Parkering": true,
     "Innergård": false,
-    "image": "img/house15.jpg"
+    "image": "img/house15.jpg",
+    "mäklare" : "Kalle Björn"
   },
   {
     "id": 16,
@@ -253,7 +268,8 @@
     "Förråd": true,
     "Parkering": true,
     "Innergård": true,
-    "image": "img/house16.jpg"
+    "image": "img/house16.jpg",
+    "mäklare" : "Eva Törnberg"
   },
   {
     "id": 17,
@@ -269,7 +285,8 @@
     "Förråd": true,
     "Parkering": true,
     "Innergård": true,
-    "image": "img/house17.jpg"
+    "image": "img/house17.jpg",
+    "mäklare":"Eva Törnberg"
   },
   {
     "id": 18,
@@ -285,7 +302,8 @@
     "Förråd": false,
     "Parkering": false,
     "Innergård": true,
-    "image": "img/house18.jpg"
+    "image": "img/house18.jpg",
+    "mäklare" : "Eva Törnberg"
   },
   {
     "id": 19,
@@ -301,7 +319,9 @@
     "Förråd": true,
     "Parkering": false,
     "Innergård": false,
-    "image": "img/house19.jpg"
+    "image": "img/house19.jpg",
+    "mäklare" : "Camilla Yvett"
+
   },
   {
     "id": 20,
@@ -317,6 +337,7 @@
     "Förråd": true,
     "Parkering": true,
     "Innergård": true,
-    "image": "img/house20.jpg"
+    "image": "img/house20.jpg",
+    "mäklare" : "Kalle Björn"
   }
 ]
