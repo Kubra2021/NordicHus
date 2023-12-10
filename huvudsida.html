@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <link rel="stylesheet" href="sok-bostad.css">
+  <link rel="stylesheet" href="huvudsida.css">
   <title>Nordic Hus</title>
 </head>
 
@@ -15,7 +15,7 @@
       <h1>Nordic Hus</h1>
     </div>
     <div class="navigation">
-      <button onclick="window.location.href='huvudsida.html'">Huvud Sida</button>
+      <button onclick="window.location.href='sok-bostad.html'">Sök Bostad</button>
       <button onclick="window.location.href='salja-bostad.html'">Sälj Bostad</button>
       <button onclick="window.location.href='sok-maklare.html'">Sök Mäklare</button>
       <button class="login-button" onclick="window.location.href='pages/logga-in.html'">Login</button>
@@ -25,7 +25,7 @@
     <section class="filters">
       <form action="" method="post">
         <h3>Sök Bostad</h3>
-
+    
         <div class="flex">
           <!-- City Box -->
           <div class="box">
@@ -36,7 +36,7 @@
               <option value="malmö">Malmö</option>
             </select>
           </div>
-
+    
           <!-- Bostad type Box -->
           <div class="box">
             <p>Bostad typ</p>
@@ -46,7 +46,7 @@
               <option value="Villa">Villa</option>
             </select>
           </div>
-
+    
           <!-- Minst antal rum Box -->
           <div class="box">
             <p>Minst antal rum</p>
@@ -59,7 +59,7 @@
               <option value="6">6 rum</option>
             </select>
           </div>
-
+    
           <!-- Minst bo area Box -->
           <div class="box">
             <p>Minst bo area</p>
@@ -96,10 +96,10 @@
               <option value="350">350 m2</option>
               <option value="360">360 m2</option>
               <option value="370">370 m2</option>
-
+    
             </select>
           </div>
-
+    
           <!-- Högst pris Box -->
           <div class="box">
             <p>Högst pris</p>
@@ -129,16 +129,38 @@
             </select>
           </div>
         </div>
-
+    
         <!-- Search Button -->
         <button type="button" onclick="searchProperties()">Hitta bostäder till salu</button>
       </form>
     </section>
-
-    <!-- Property List -->
-    <ul id="propertyList" class="property-list"></ul>
+    
+    <section class="services">
+      <div class="services-header">
+        <h1 class="heading">Våra tjänster</h1>
+      </div>
+      <div class="box-container">
+        <div class="box">
+          <img src="icon-1.png" alt="">
+          <h3>Köp Bostad</h3>
+          <p>Hjälp och stöd för att köpa din drömbostad. Vi guider dig genom hela köpprocessen och ser till att du hittar
+            det perfekta hemmet för dig.</p>
+        </div>
+        <div class="box">
+          <img src="icon-3.png" alt="">
+          <h3>Sälja Bostad</h3>
+          <p>Funderar du på att sälja din bostad? Våra experter erbjuder professionell rådgivning och marknadsföring för att
+            säkerställa en smidig försäljning.</p>
+        </div>
+        <div class="box">
+          <img src="icon-6.png" alt="">
+          <h3>24/7 service</h3>
+          <p>Vår dedikerade kundtjänst är tillgänglig dygnet runt för att svara på dina frågor och erbjuda support när du
+            behöver det.</p>
+        </div>
+      </div>
+    </section>
   </main>
-
   <footer class="footer">
   
     <section class="flex">
@@ -168,7 +190,9 @@
     <div class="credit">&copy; copyright @ 2023 by <span>Nordic Hus</span> | all rights reserved!</div>
   
   </footer>
-  <script src="script1.js"></script>
+
+  <script src="huvudsida.js"></script>
+
 </body>
 
 </html>
