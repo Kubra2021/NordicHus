@@ -23,7 +23,7 @@
   </header>
   <main>
     <section class="filters">
-      <form action="" method="post">
+      <form id="propertySearchForm" action="" method="post">
         <h3>Sök Bostad</h3>
 
         <div class="flex">
@@ -31,6 +31,7 @@
           <div class="box">
             <p>Stad</p>
             <select name="city" class="input" required>
+              <option value="">Välj stad</option>
               <option value="stockholm">Stockholm</option>
               <option value="göteborg">Göteborg</option>
               <option value="malmö">Malmö</option>
@@ -41,8 +42,9 @@
           <div class="box">
             <p>Bostad typ</p>
             <select name="type" class="input" required>
+              <option value="">Välj bostadstyp</option>
               <option value="Lägenhet">Lägenhet</option>
-              <option value="Hus">Hus</option>
+              <option value="Radhus">Radhus</option>
               <option value="Villa">Villa</option>
             </select>
           </div>
@@ -50,7 +52,8 @@
           <!-- Minst antal rum Box -->
           <div class="box">
             <p>Minst antal rum</p>
-            <select name="bhk" class="input" required>
+            <select name="rum" class="input" required>
+              <option value="">Välj antal rum</option>
               <option value="1">1 rum</option>
               <option value="2">2 rum</option>
               <option value="3">3 rum</option>
@@ -63,7 +66,8 @@
           <!-- Minst bo area Box -->
           <div class="box">
             <p>Minst bo area</p>
-            <select name="minimum" class="input" required>
+            <select name="boarea" class="input" required>
+              <option value="">Välj minsta boarea</option>
               <option value="60">60 m2</option>
               <option value="70">70 m2</option>
               <option value="80">80 m2</option>
@@ -103,7 +107,8 @@
           <!-- Högst pris Box -->
           <div class="box">
             <p>Högst pris</p>
-            <select name="maximum" class="input" required>
+            <select name="pris" class="input" required>
+              <option value="">Välj högsta pris</option>
               <option value="800000">800,000 kr</option>
               <option value="1000000">1,000,000 kr</option>
               <option value="1300000">1,300,000 kr</option>
@@ -129,15 +134,19 @@
             </select>
           </div>
         </div>
-
-        <!-- Search Button -->
+        
         <button type="button" onclick="searchProperties()">Hitta bostäder till salu</button>
-      </form>
-    </section>
-
-    <!-- Property List -->
-    <ul id="propertyList" class="property-list"></ul>
-  </main>
+        </form>
+        </section>
+        <select id="sortCriteria" onchange="updateSorting()">
+          <option value="price-increase">Pris stigande</option>
+          <option value="price-decrease">Pris fallande</option>
+          <option value="new-old">Ny - Gammal</option>
+          <option value="old-new">Gammal - Ny</option>
+        </select>
+        
+        <!-- Display Search Results -->
+        <ul id="propertyList" class="property-list"></ul>
 
   <footer class="footer">
   
@@ -168,7 +177,11 @@
     <div class="credit">&copy; copyright @ 2023 by <span>Nordic Hus</span> | all rights reserved!</div>
   
   </footer>
+<<<<<<< HEAD
   <script src="script.js"></script>
+=======
+  <script src="sok-bostad.js"></script>
+>>>>>>> dev
 </body>
 
 </html>
