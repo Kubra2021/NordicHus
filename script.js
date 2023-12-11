@@ -8,14 +8,8 @@ fetch('bostadlist.json')
     // Display all properties when the page loads
     displayProperties(properties);
 
-    // Search function
-    function searchProperties() {
-      // ... (unchanged code) ...
-    }
-
     // Function to display properties
     function displayProperties(properties) {
-      console.log(properties); // Log the properties to the console
       var propertyList = document.getElementById('propertyList');
       propertyList.innerHTML = '';
 
@@ -50,6 +44,60 @@ fetch('bostadlist.json')
           propertyList.appendChild(propertyItem);
         });
       }
+    }
+
+    // Search function
+    function searchProperties() {
+      // Get filter values
+      var city = document.querySelector('select[name="city"]').value;
+      var type = document.querySelector('select[name="type"]').value;
+      var rum = document.querySelector('select[name="rum"]').value;
+      var boarea = document.querySelector('select[name="boarea"]').value;
+      var pris = document.querySelector('select[name="pris"]').value;
+
+      // Apply filters
+      var filteredProperties = properties.filter(function (property) {
+        return (!city || property.City.toLowerCase() === city.toLowerCase()) &&
+          (!type || property.Bostadstyp.toLowerCase() === type.toLowerCase()) &&
+          (!rum || property['Antal rum'] >= rum) &&
+          (!boarea || property.Boarea >= boarea) &&
+          (!pris || property.Utgångspris <= pris);
+      });
+
+      // Display filtered properties
+      displayProperties(filteredProperties);
+    }
+
+    // Sorting function
+    function updateSorting() {
+      var sortCriteria = document.getElementById('sortCriteria').value;
+
+      switch (sortCriteria) {
+        case 'price-increase':
+          properties.sort(function (a, b) {
+            return a.Utgångspris - b.Utgångspris;
+          });
+          break;
+        case 'price-decrease':
+          properties.sort(function (a, b) {
+            return b.Utgångspris - a.Utgångspris;
+          });
+          break;
+        case 'new-old':
+          properties.sort(function (a, b) {
+            return a.Byggnadsår - b.Byggnadsår;
+          });
+          break;
+        case 'old-new':
+          properties.sort(function (a, b) {
+            return b.Byggnadsår - a.Byggnadsår;
+          });
+          break;
+        // Add more cases for other sorting criteria if needed
+      }
+
+      // Display the sorted properties
+      displayProperties(properties);
     }
   })
   .catch(error => console.error('Fel vid hämtning av data:', error));
