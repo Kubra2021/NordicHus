@@ -9,7 +9,7 @@ body::before {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
-  background-image: url('mainPage.jpg');
+  background-image: url('img/mainPage.jpg');
 }
 
 header {
@@ -107,11 +107,11 @@ main {
   cursor: pointer;
 }
 
+
 .property-list {
   list-style: none;
   padding: 0;
-  margin: 20px 0;
-  margin-top: 500px;/* Add margin-top to create space between property section and above sections */
+  margin: 500px 0 0;
 }
 
 .property-box {
@@ -134,12 +134,18 @@ main {
 
 .property-info {
   flex: 1;
-  max-width: 1000px;/* Adjust the maximum width as needed */
+  max-width: 1000px;
+  /* Adjust the maximum width as needed */
   margin-right: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);/* Add a subtle box shadow */
-  background-color: #f4f4f4;/* Set a background color for property-info */
-  border: 1px solid #ccc;/* Add a border around property-info */
-  border-radius: 8px;/* Optional: Add border-radius for rounded corners *//* Add margin to create space between property-info and property-description */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add a subtle box shadow */
+  background-color: #f4f4f4;
+  /* Set a background color for property-info */
+  border: 1px solid #ccc;
+  /* Add a border around property-info */
+  border-radius: 8px;
+  /* Optional: Add border-radius for rounded corners */
+  /* Add margin to create space between property-info and property-description */
 }
 
 .property-info p {
@@ -152,6 +158,7 @@ main {
   text-align: justify;
   font-weight: bold;
 }
+
 /* ... (unchanged styles) ... */
 
 .property-info .additional-label {
